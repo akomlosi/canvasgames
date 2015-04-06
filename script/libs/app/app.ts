@@ -1,10 +1,10 @@
-/// <reference path="../core/dts/all.d.ts" />
-import h = require('./app2');
-export class SayHello {
-	public greet(name?: String) {
-		if (!name) {
-			return new h.HelloWorld().doit();
-		}
-		return 'hello, ' + name;
-	}
+/// <reference path="../core/types/all.d.ts" />
+
+/**
+ * Main application
+ * Starts game engine
+ */
+
+export class App {
+	constructor() {	}
 }

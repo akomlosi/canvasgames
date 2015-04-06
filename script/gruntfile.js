@@ -8,21 +8,12 @@ module.exports = function(grunt) {
 			},
 			test: {
 				files: {
-					'tests/bundle/bundle.js': ['tests/apptest/**/*.js', 'libs/app/**/*.js']
+					'tests/bundle/bundle.js': ['tests/tests/**/*.js', 'libs/app/**/*.js']
 				}
 			}
 		},
-		concat: {
-			options: {
-				separator: ';'
-			},
-			dist: {
-				src: ['libs/app/**/*.js'],
-				dest: 'libs/build/concatForTests.js'
-			}
-		},
 		"tpm-index": {
-			all: {src: ["libs/core/dts/**/*.d.ts"], dest: "libs/core/dts/all.d.ts"}
+			all: {src: ["libs/core/types/**/*.d.ts"], dest: "libs/core/types/all.d.ts"}
 		}
 	});
 	grunt.loadNpmTasks('grunt-browserify');

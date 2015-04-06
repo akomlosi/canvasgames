@@ -1,15 +1,12 @@
-/// <reference path="../core/dts/all.d.ts" />
-var h = require('./app2');
-var SayHello = (function () {
-    function SayHello() {
+/// <reference path="../core/types/all.d.ts" />
+/**
+ * Main application
+ * Starts game engine
+ */
+var App = (function () {
+    function App() {
     }
-    SayHello.prototype.greet = function (name) {
-        if (!name) {
-            return new h.HelloWorld().doit();
-        }
-        return 'hello, ' + name;
-    };
-    return SayHello;
+    return App;
 })();
-exports.SayHello = SayHello;
+exports.App = App;
 //# sourceMappingURL=app.js.map
